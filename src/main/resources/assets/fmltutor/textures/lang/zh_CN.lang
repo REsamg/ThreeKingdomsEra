@@ -1,0 +1,17 @@
+
+
+
+tile.fmltutor.grass_block.name=§9黄金方块
+tile.fmltutor.orecopper.name=铜矿石
+tile.fmltutor.oretin.name=锡矿石
+item.fmltutor.copper_cash.name=铜钱
+item.fmltutor.copperingot.name=铜锭
+item.fmltutor.tiningot.name=锡锭
+item.fmltutor.bronzeingot.name=青铜锭
+item.ironbroadsword.name=铁质大刀
+item.ironhalberd.name=铁质战戟
+item.copper_picks.name=铜制镐
+itemGroup.Sanguo_sundries=三国时代-杂物
+itemGroup.Sanguo_equip=三国时代-装备
+itemGroup.Sanguo_block=三国时代-方块
+entity.fmltutor.GoldenChicken.name=黄金鸡
