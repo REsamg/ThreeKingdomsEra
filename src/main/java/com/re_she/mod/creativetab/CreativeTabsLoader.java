@@ -9,15 +9,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 
-public class CreativeTabsLoader {
-  /*
-    public static CreativeTabs tabFMLTutor;
+public class CreativeTabsLoader
+{
 
-    public CreativeTabsLoader(FMLPreInitializationEvent event)
-    {
-        tabFMLTutor = new CreativeTabsFMLTutor();
-    }s
-*/
     public static final CreativeTabs re_tabFMLTutor = new CreativeTabs( "Sanguo_sundries")
     {
         @SideOnly(Side.CLIENT)

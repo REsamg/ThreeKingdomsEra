@@ -34,7 +34,7 @@ public class EventLoader {
                 ServerConfigurationManager scm = MinecraftServer.getServer().getConfigurationManager();
                 WorldTeleporterPollute teleporter = new WorldTeleporterPollute(MinecraftServer.getServer().worldServerForDimension(21));
                 scm.transferEntityToWorld(entity, 21,(WorldServer) world,MinecraftServer.getServer().worldServerForDimension(21),teleporter);
-            }bu
+            }
             String info = String.format("%s interacts with: %s", event.entityPlayer.getDisplayName(), (event.entityPlayer));
         }
     }

@@ -3,7 +3,6 @@ package com.re_she.mod.item;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemSword;
 
 public class ItemLoader
 {
@@ -18,6 +17,10 @@ public class ItemLoader
     public static Item copper_hoe = new Itemcopperhoe();
     public static Item copper_spade = new Itemcopperspade();
     public static Item copper_sword = new Itemcoppersword();
+
+    public static Item csnn_hattt = new ItemSafetyBuckle();
+
+
 
     public ItemLoader(FMLPreInitializationEvent event)
     {
@@ -44,6 +47,10 @@ public class ItemLoader
         GameRegistry.registerItem(copper_spade,"copper_spade");
 
         GameRegistry.registerItem(copper_sword,"copper_sword");
+
+
+
+        GameRegistry.registerItem(csnn_hattt,"safety_buckle");
     }
 
 
