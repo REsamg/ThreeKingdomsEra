@@ -1,6 +1,7 @@
 package com.re_she.mod.common;
 
 import com.re_she.mod.block.BlockLoader;
+import com.re_she.mod.inventory.GuiElementLoader;
 import com.re_she.mod.item.ItemLoader;
 import com.re_she.mod.world.WorldProviderPollute;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -17,6 +18,7 @@ public class CommonProxy
         new ItemLoader(event);
         new BlockLoader(event);
         new EventLoader();
+        new GuiElementLoader();
     }
     public void init(FMLInitializationEvent event)
     {

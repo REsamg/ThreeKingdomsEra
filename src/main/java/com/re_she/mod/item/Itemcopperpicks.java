@@ -8,11 +8,11 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class Itemcopperpicks extends ItemPickaxe
 {
-    public static final Item.ToolMaterial copperiron = EnumHelper.addToolMaterial("copperiron", 1, 250, 6.0F, 2.0F, 10);
+    public static final Item.ToolMaterial copper = EnumHelper.addToolMaterial("copperiron", 1, 250, 4.0F, 2.0F, 10);
 
     public Itemcopperpicks()
     {
-        super(copperiron);
+        super(copper);
         this.setUnlocalizedName("copper_picks");
         this.setTextureName(Fmltutor.MODID + ":" + "copper_picks");
         this.setCreativeTab(CreativeTabsLoader.re_equip);
