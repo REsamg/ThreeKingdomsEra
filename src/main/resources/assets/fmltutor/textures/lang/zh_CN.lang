@@ -21,3 +21,5 @@ itemGroup.Sanguo_sundries=三国时代-杂物
 itemGroup.Sanguo_equip=三国时代-装备
 itemGroup.Sanguo_block=三国时代-方块
 entity.fmltutor.GoldenChicken.name=黄金鸡
+key.fmltutor.Openthemenu=打开菜单
+key.categories.fmltutor=三国时代
