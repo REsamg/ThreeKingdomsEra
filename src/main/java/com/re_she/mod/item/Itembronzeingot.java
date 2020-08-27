@@ -13,4 +13,10 @@ public class Itembronzeingot extends Item
         this.setTextureName(Fmltutor.MODID + ":" + "bronzeingot");
         this.setCreativeTab(CreativeTabsLoader.re_tabFMLTutor);
     }
+
+
+
+
+
+    
 }
