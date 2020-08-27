@@ -1,6 +1,7 @@
 package com.re_she.mod.client;
 
 import com.re_she.mod.common.CommonProxy;
+import com.re_she.mod.entity.EntityLoader;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -18,6 +19,7 @@ public class ClientProxy extends CommonProxy
     {
         super.init(event);
         new KeyLoader();
+        EntityLoader.registerRenders();
     }
 
     @Override

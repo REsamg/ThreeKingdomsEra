@@ -18,7 +18,7 @@ public class ItemLoader
     public static Item copper_spade = new Itemcopperspade();
     public static Item copper_sword = new Itemcoppersword();
 
-    public static Item csnn_hattt = new ItemSafetyBuckle();
+    public static Item safety_buckle = new ItemSafetyBuckle();
 
 
 
@@ -50,7 +50,7 @@ public class ItemLoader
 
 
 
-        GameRegistry.registerItem(csnn_hattt,"safety_buckle");
+        GameRegistry.registerItem(safety_buckle,"safety_buckle");
     }
 
 
