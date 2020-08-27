@@ -2,7 +2,9 @@ package com.re_she.mod.entity;
 
 //import com.qinglongmp.chemistry.item.ItemContainer;
 import net.minecraft.client.audio.SoundCategory;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -10,20 +12,25 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
-public class EntitySafetyBuckle extends EntityThrowable {
+public class EntitySafetyBuckle extends EntityThrowable
+{
     public double damage = 4;
 
-    public EntitySafetyBuckle(World worldIn) {
+    public EntitySafetyBuckle(World worldIn)
+    {
         super(worldIn);
     }
 
-    public EntitySafetyBuckle(World worldIn, EntityLivingBase throwerIn) {
+    public EntitySafetyBuckle(World worldIn, EntityLivingBase throwerIn)
+    {
         super(worldIn, throwerIn);
     }
 
-    public EntitySafetyBuckle(World worldIn, double x, double y, double z, int damage) {
+    public EntitySafetyBuckle(World worldIn, double x, double y, double z, int damage)
+    {
         super(worldIn, x, y, z);
         this.damage = damage;
+
     }
 
     protected float getGravityVelocity()
@@ -68,6 +75,9 @@ public class EntitySafetyBuckle extends EntityThrowable {
             this.playSound("dig.glass", 1.0F, ((this.rand.nextFloat() - this.rand.nextFloat()) * 1.0F + 1.0F) * 1.0F);
             //this.worldObj.playAuxSFX(2002, (int)Math.round(this.posX), (int)Math.round(this.posY), (int)Math.round(this.posZ), 0);
             this.setDead();
+            //雷电
+            this.worldObj.spawnEntityInWorld((Entity)new EntityLightningBolt(this.worldObj, this.posX, this.posY, this.posZ));
+
         }
     }
 

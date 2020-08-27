@@ -62,7 +62,7 @@ public class ItemSafetyBuckle extends Item
                     {
                         worldIn.spawnEntityInWorld(new EntitySafetyBuckle(worldIn, player));
                         //雷电
-                        worldIn.spawnEntityInWorld((Entity)new EntityLightningBolt(worldIn, player.posX, player.posY, player.posZ));
+                        //worldIn.spawnEntityInWorld((Entity)new EntityLightningBolt(worldIn, player.posX, player.posY, player.posZ));
                     }
                     return itemStackIn;
                 }
@@ -79,7 +79,7 @@ public class ItemSafetyBuckle extends Item
                     worldIn.spawnEntityInWorld(new EntitySafetyBuckle(worldIn, player));
 
                     //雷电
-                    worldIn.spawnEntityInWorld((Entity)new EntityLightningBolt(worldIn, player.posX, player.posY, player.posZ));
+                    //worldIn.spawnEntityInWorld((Entity)new EntityLightningBolt(worldIn, player.posX, player.posY, player.posZ));
                 }
                 return itemStackIn;
             }
