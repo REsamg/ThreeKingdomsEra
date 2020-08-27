@@ -14,9 +14,6 @@ public class Itembronzeingot extends Item
         this.setCreativeTab(CreativeTabsLoader.re_tabFMLTutor);
     }
 
-    //你看到了吗？？
-
-
 
     
 }
