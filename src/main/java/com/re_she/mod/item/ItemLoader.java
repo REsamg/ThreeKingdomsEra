@@ -14,6 +14,10 @@ public class ItemLoader
     public static Item tiningot = new Itemtiningot();
     public static Item bronzeingot = new Itembronzeingot();
     public static Item copper_picks = new Itemcopperpicks();
+    public static Item copper_axe = new Itemcopperaxe();
+    public static Item copper_hoe = new Itemcopperhoe();
+    public static Item copper_spade = new Itemcopperspade();
+    public static Item copper_sword = new Itemcoppersword();
 
     public ItemLoader(FMLPreInitializationEvent event)
     {
@@ -32,6 +36,14 @@ public class ItemLoader
         GameRegistry.registerItem(bronzeingot,"bronzeingot");
 
         GameRegistry.registerItem(copper_picks,"copper_picks");
+
+        GameRegistry.registerItem(copper_axe,"copper_axe");
+
+        GameRegistry.registerItem(copper_hoe,"copper_hoe");
+
+        GameRegistry.registerItem(copper_spade,"copper_spade");
+
+        GameRegistry.registerItem(copper_sword,"copper_sword");
     }
 
 

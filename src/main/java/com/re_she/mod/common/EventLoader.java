@@ -23,16 +23,9 @@ public class EventLoader {
 
     @SubscribeEvent
     public void onPlayerItemPickup(PlayerEvent.ItemPickupEvent event) {
-        if (event.player.isServerWorld()) {
-            String info = String.format("%s picks up: %s", event.player.getDisplayName(), event.pickedUp.getEntityItem());
-        }
-    }
-
-    @SubscribeEvent
-    public void onPlayerInteract(PlayerInteractEvent event) {
-        EntityPlayer entity = event.entityPlayer;
+        EntityPlayer entity = event.player;
         World world = entity.worldObj;
-        if (!event.world.isRemote) {
+        if (event.player.isServerWorld()) {
             if(entity instanceof EntityPlayerMP){
                 ServerConfigurationManager scm = MinecraftServer.getServer().getConfigurationManager();
                 WorldTeleporterPollute teleporter = new WorldTeleporterPollute(MinecraftServer.getServer().worldServerForDimension(21));
@@ -42,7 +35,7 @@ public class EventLoader {
                 WorldTeleporterPollute teleporter = new WorldTeleporterPollute(MinecraftServer.getServer().worldServerForDimension(21));
                 scm.transferEntityToWorld(entity, 21,(WorldServer) world,MinecraftServer.getServer().worldServerForDimension(21),teleporter);
             }
-            String info = String.format("%s interacts with: %s", event.entityPlayer.getDisplayName(), (event.entityPlayer.posX));
+            String info = String.format("%s picks up: %s", event.player.getDisplayName(), event.pickedUp.getEntityItem());
         }
     }
 

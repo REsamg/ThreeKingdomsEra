@@ -9,6 +9,8 @@ public class BlockLoader
     public static Block grassBlock = new BlockAGrassBlock();
     public static Block orecopper = new BlockAcopper();
     public static Block oretin = new BlockAoretin();
+    public static Block bronzeBlock = new BlockAbronzeBlock();
+    public static Block copperBlock = new BlockAcopperBlock();
 
 
     public BlockLoader(FMLPreInitializationEvent event)
@@ -17,6 +19,8 @@ public class BlockLoader
         GameRegistry.registerBlock(grassBlock, "grass_block");
         GameRegistry.registerBlock(orecopper, "orecopper");
         GameRegistry.registerBlock(oretin, "oretin");
+        GameRegistry.registerBlock(bronzeBlock, "bronze_block");
+        GameRegistry.registerBlock(copperBlock, "copper_block");
 
        // register(grassBlock, "grass_block");
     }
