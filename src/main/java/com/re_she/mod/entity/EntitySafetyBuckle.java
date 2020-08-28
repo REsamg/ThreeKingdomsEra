@@ -5,6 +5,8 @@ import net.minecraft.client.audio.SoundCategory;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
+import net.minecraft.entity.passive.EntityCow;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -70,15 +72,21 @@ public class EntitySafetyBuckle extends EntityThrowable
             this.worldObj.spawnParticle("", this.posX, this.posY, this.posZ, 0.0D, 0.0D, 0.0D);
         }//flame箭
 
+
         if (!this.worldObj.isRemote)
         {
             this.playSound("dig.glass", 1.0F, ((this.rand.nextFloat() - this.rand.nextFloat()) * 1.0F + 1.0F) * 1.0F);
-            //this.worldObj.playAuxSFX(2002, (int)Math.round(this.posX), (int)Math.round(this.posY), (int)Math.round(this.posZ), 0);
             this.setDead();
-            //雷电
-            this.worldObj.spawnEntityInWorld((Entity)new EntityLightningBolt(this.worldObj, this.posX, this.posY, this.posZ));
-
         }
+
+        //雷电
+        float var4 = 1.0F;
+        int i = (int)(this.prevPosX + (this.posX - this.prevPosX) * var4);
+        int j = (int)(this.prevPosY + (this.posY - this.prevPosY) * var4 + 1.62D - this.yOffset) - 1;
+        int k = (int)(this.prevPosZ + (this.posZ - this.prevPosZ) * var4);
+
+        System.out.println( "X:" + i + " Y:" + j + " Z:" + k );
+        this.worldObj.spawnEntityInWorld((Entity)new EntityLightningBolt(this.worldObj, i, j, k));
     }
 
     public void setDamage(double d)

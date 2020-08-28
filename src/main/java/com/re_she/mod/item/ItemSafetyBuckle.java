@@ -27,6 +27,16 @@ public class ItemSafetyBuckle extends Item
     public ItemStack onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer player)
     {
 
+
+
+
+
+
+
+
+
+
+
         //雷电
        // worldIn.spawnEntityInWorld((Entity)new EntityLightningBolt(worldIn, player.posX, player.posY, player.posZ));
 
@@ -61,6 +71,7 @@ public class ItemSafetyBuckle extends Item
                     if (!worldIn.isRemote)
                     {
                         worldIn.spawnEntityInWorld(new EntitySafetyBuckle(worldIn, player));
+
                         //雷电
                         //worldIn.spawnEntityInWorld((Entity)new EntityLightningBolt(worldIn, player.posX, player.posY, player.posZ));
                     }
@@ -78,12 +89,19 @@ public class ItemSafetyBuckle extends Item
                 {
                     worldIn.spawnEntityInWorld(new EntitySafetyBuckle(worldIn, player));
 
+
+
+
                     //雷电
                     //worldIn.spawnEntityInWorld((Entity)new EntityLightningBolt(worldIn, player.posX, player.posY, player.posZ));
                 }
                 return itemStackIn;
             }
+
+
         return itemStackIn;
+
+
     }
 
 
