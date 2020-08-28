@@ -6,12 +6,15 @@ import org.lwjgl.input.Keyboard;
 
 public class KeyLoader
 {
-    public static KeyBinding Openthemenu;
+    //KEY_V 按V
+    public static KeyBinding Openthemenu = new KeyBinding(
+            "key.fmltutor.showtime",
+            Keyboard.KEY_V,
+            "key.categories.fmltutor");
+
 
     public KeyLoader()
     {
-        KeyLoader.Openthemenu = new KeyBinding("key.fmltutor.showTime", Keyboard.KEY_V, "key.categories.fmltutor");
-
         ClientRegistry.registerKeyBinding(KeyLoader.Openthemenu);
     }
 }

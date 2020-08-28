@@ -10,7 +10,8 @@ import net.minecraft.world.biome.WorldChunkManager;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.ChunkProviderFlat;
 
-public class WorldProviderPollute extends WorldProvider {
+public class WorldProviderPollute extends WorldProvider
+{
     public void registerWorldChunkManager()
     {
         this.worldChunkMgr = new WorldChunkManager(worldObj);
@@ -24,15 +25,21 @@ public class WorldProviderPollute extends WorldProvider {
     public long getWorldTime() {
         return worldObj.getWorldInfo().getWorldTime()*1;
     }
+
     @Override
     @SideOnly(Side.CLIENT)
-    public Vec3 getSkyColor(Entity cameraEntity, float partialTicks) {
+    public Vec3 getSkyColor(Entity cameraEntity, float partialTicks)
+    {
         return Vec3.createVectorHelper(0.20000000298023224D, 0.029999999329447746D, 0.029999999329447746D);
     }
+
+    /*
     public IChunkProvider createChunkGenerator()
     {
         return new ChunkProviderPollute(this.worldObj, this.worldObj.getSeed());
     }
+    */
+
     public boolean isSurfaceWorld()
     {
         return true;

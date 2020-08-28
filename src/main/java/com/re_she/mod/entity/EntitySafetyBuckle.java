@@ -85,7 +85,7 @@ public class EntitySafetyBuckle extends EntityThrowable
         int j = (int)(this.prevPosY + (this.posY - this.prevPosY) * var4 + 1.62D - this.yOffset) - 1;
         int k = (int)(this.prevPosZ + (this.posZ - this.prevPosZ) * var4);
 
-        System.out.println( "X:" + i + " Y:" + j + " Z:" + k );
+        //System.out.println( "X:" + i + " Y:" + j + " Z:" + k );
         this.worldObj.spawnEntityInWorld((Entity)new EntityLightningBolt(this.worldObj, i, j, k));
     }
 
