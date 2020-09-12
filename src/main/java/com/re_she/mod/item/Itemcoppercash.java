@@ -23,8 +23,22 @@ public class Itemcoppercash extends Item {
 
 
     @Override
-    public ItemStack onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer player)
+    public ItemStack onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn)
     {
+        if (!playerIn.capabilities.isCreativeMode)
+        {
+            --itemStackIn.stackSize;
+        }
+        if (!worldIn.isRemote)
+        {
+            if (playerIn.isSneaking())
+            {
+                int id = GuiElementLoader.GUI_DEMO;
+                playerIn.openGui(Fmltutor.instance,id,worldIn,(int)playerIn.posX,(int)playerIn.posY,(int)playerIn.posZ);
+                playerIn.addChatComponentMessage((IChatComponent)new ChatComponentText("Open Gui"));
+            }
+        }
+        return itemStackIn;
         /*
         if(worldIn.isRemote)
         {
@@ -39,8 +53,6 @@ public class Itemcoppercash extends Item {
         }
 
          */
-
-        return itemStackIn;
     }
 
 
