@@ -20,9 +20,6 @@ public class CommonProxy
         new ItemLoader(event);
         new BlockLoader(event);
         new EntityLoader();
-
-        //new KeyLoader();
-
         new EventLoader();
         new GuiElementLoader();
     }

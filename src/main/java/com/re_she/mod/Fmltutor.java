@@ -11,9 +11,9 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Fmltutor.MODID, name = Fmltutor.NAME, version = Fmltutor.VERSION)
 public class Fmltutor
 {
-    public static final String MODID = "fmltutor";      //MODID是要小写！！！！！ 可以加_   比如：   fmang_dsab
-    public static final String NAME = "FML Tutor";      //名字 可以大小写
-    public static final String VERSION = "1.0.0";       //版本
+    public static final String MODID = "three_kingdoms_era";
+    public static final String NAME = "Three Kingdoms Era";
+    public static final String VERSION = "1.0.0";
 
     @Mod.Instance(Fmltutor.MODID)
     public static Fmltutor instance;
