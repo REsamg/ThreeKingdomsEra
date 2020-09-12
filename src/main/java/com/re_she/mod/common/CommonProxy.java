@@ -1,7 +1,6 @@
 package com.re_she.mod.common;
 
 import com.re_she.mod.block.BlockLoader;
-import com.re_she.mod.client.KeyLoader;
 import com.re_she.mod.entity.EntityLoader;
 import com.re_she.mod.inventory.GuiElementLoader;
 import com.re_she.mod.item.ItemLoader;
