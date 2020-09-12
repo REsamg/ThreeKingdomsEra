@@ -13,7 +13,7 @@ public class Itemcoppersword extends ItemSword
     public Itemcoppersword()
     {
         super(copper);
-        this.setUnlocalizedName("copper_sword");
+        this.setUnlocalizedName(Fmltutor.MODID + "." + "copper_sword");
         this.setTextureName(Fmltutor.MODID + ":" + "copper_sword");
         this.setCreativeTab(CreativeTabsLoader.re_equip);
     }

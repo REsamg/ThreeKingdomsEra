@@ -12,7 +12,7 @@ public class ItemIronHalberd extends ItemSword {
     public ItemIronHalberd()
     {
         super(Iron);
-        this.setUnlocalizedName("ironhalberd");
+        this.setUnlocalizedName(Fmltutor.MODID + "." + "ironhalberd");
         this.setTextureName(Fmltutor.MODID + ":" + "ironhalberd");
         this.setCreativeTab(CreativeTabsLoader.re_equip);
     }

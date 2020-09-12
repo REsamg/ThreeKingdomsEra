@@ -13,7 +13,7 @@ public class ItemIronBroadSword extends ItemSword
     public ItemIronBroadSword()
     {
         super(Iron);
-        this.setUnlocalizedName("ironbroadsword");
+        this.setUnlocalizedName(Fmltutor.MODID + "." + "ironbroadsword");
         this.setTextureName(Fmltutor.MODID + ":" + "ironbroadsword");
         this.setCreativeTab(CreativeTabsLoader.re_equip);
     }

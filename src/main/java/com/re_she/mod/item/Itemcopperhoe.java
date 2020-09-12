@@ -13,7 +13,7 @@ public class Itemcopperhoe extends ItemHoe
     public Itemcopperhoe()
     {
         super(copper);
-        this.setUnlocalizedName("copper_hoe");
+        this.setUnlocalizedName(Fmltutor.MODID + "." + "copper_hoe");
         this.setTextureName(Fmltutor.MODID + ":" + "copper_hoe");
         this.setCreativeTab(CreativeTabsLoader.re_equip);
     }

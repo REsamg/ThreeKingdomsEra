@@ -13,7 +13,7 @@ public class Itemcopperspade extends ItemSpade
     public Itemcopperspade()
     {
         super(copper);
-        this.setUnlocalizedName("copper_spade");
+        this.setUnlocalizedName(Fmltutor.MODID + "." + "copper_spade");
         this.setTextureName(Fmltutor.MODID + ":" + "copper_spade");
         this.setCreativeTab(CreativeTabsLoader.re_equip);
     }

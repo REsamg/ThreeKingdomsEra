@@ -13,7 +13,7 @@ public class Itemcopperaxe extends ItemAxe
     public Itemcopperaxe()
     {
         super(copper);
-        this.setUnlocalizedName("copper_axe");
+        this.setUnlocalizedName(Fmltutor.MODID + "." + "copper_axe");
         this.setTextureName(Fmltutor.MODID + ":" + "copper_axe");
         this.setCreativeTab(CreativeTabsLoader.re_equip);
     }

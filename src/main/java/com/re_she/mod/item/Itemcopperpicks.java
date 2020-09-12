@@ -13,7 +13,7 @@ public class Itemcopperpicks extends ItemPickaxe
     public Itemcopperpicks()
     {
         super(copper);
-        this.setUnlocalizedName("copper_picks");
+        this.setUnlocalizedName(Fmltutor.MODID + "." + "copper_picks");
         this.setTextureName(Fmltutor.MODID + ":" + "copper_picks");
         this.setCreativeTab(CreativeTabsLoader.re_equip);
     }
