@@ -1,15 +1,15 @@
 
 
 
-tile.fmltutor.grass_block.name=§9黄金方块
-tile.fmltutor.orecopper.name=铜矿石
-tile.fmltutor.oretin.name=锡矿石
-tile.fmltutor.bronze_block.name=青铜块
-tile.fmltutor.copper_block.name=铜块
-item.fmltutor.copper_cash.name=铜钱
-item.fmltutor.copperingot.name=铜锭
-item.fmltutor.tiningot.name=锡锭
-item.fmltutor.bronzeingot.name=青铜锭
+tile.three_kingdoms_era.grass_block.name=§9黄金方块
+tile.three_kingdoms_era.orecopper.name=铜矿石
+tile.three_kingdoms_era.oretin.name=锡矿石
+tile.three_kingdoms_era.bronze_block.name=青铜块
+tile.three_kingdoms_era.copper_block.name=铜块
+item.three_kingdoms_era.copper_cash.name=铜钱
+item.three_kingdoms_era.copperingot.name=铜锭
+item.three_kingdoms_era.tiningot.name=锡锭
+item.three_kingdoms_era.bronzeingot.name=青铜锭
 item.ironbroadsword.name=铁质大刀
 item.ironhalberd.name=铁质战戟
 item.copper_picks.name=铜镐
@@ -20,6 +20,6 @@ item.copper_sword.name=铜剑
 itemGroup.Sanguo_sundries=三国时代-杂物
 itemGroup.Sanguo_equip=三国时代-装备
 itemGroup.Sanguo_block=三国时代-方块
-entity.fmltutor.GoldenChicken.name=黄金鸡
-key.fmltutor.Openthemenu=打开菜单
-key.categories.fmltutor=三国时代
+entity.three_kingdoms_era.GoldenChicken.name=黄金鸡
+key.three_kingdoms_era.Openthemenu=打开菜单
+key.categories.three_kingdoms_era=三国时代
