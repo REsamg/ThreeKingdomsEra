@@ -22,6 +22,7 @@ public class ItemRedPacket extends Item {
         this.setMaxStackSize(1);
     }
 
+
     @Override
     public ItemStack onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn)
     {
