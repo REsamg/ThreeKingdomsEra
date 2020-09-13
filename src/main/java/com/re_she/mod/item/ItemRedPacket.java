@@ -20,6 +20,7 @@ public class ItemRedPacket extends Item {
         this.setTextureName(Fmltutor.MODID + ":" + "red_packet");
         this.setCreativeTab(CreativeTabsLoader.re_tabFMLTutor);
         this.setMaxStackSize(1);
+
     }
 
 
