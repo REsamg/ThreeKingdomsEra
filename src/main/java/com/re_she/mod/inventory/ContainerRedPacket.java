@@ -16,9 +16,12 @@ public class ContainerRedPacket extends Container {
 
 
     public ContainerRedPacket(EntityPlayer player) {
+
         this.itemStack = player.getHeldItem();
-        Slot slot0 = new Slot(new InventoryBasic("redpacket", false, 1), 0, 80, 25);
-        this.addSlotToContainer(slot0);
+        //Slot slot0 = new Slot(new InventoryBasic("redpacket", false, 1), 0, 80, 25);
+        this.addSlotToContainer(new Slot(new InventoryBasic("redpacket", false, 1),
+                0, 80, 25));
+
 
         load(player);
 
@@ -78,6 +81,7 @@ public class ContainerRedPacket extends Container {
         if (getSlot(0).getStack() != null) getSlot(0).getStack().writeToNBT(nbtitem);
         p_75134_1_.getHeldItem().setTagInfo("item", nbtitem);
     }
+
 
     @Override
     public ItemStack transferStackInSlot(EntityPlayer par1EntityPlayer, int par2) {

@@ -17,6 +17,8 @@ item.three_kingdoms_era.copper_hoe.name=铜锄头
 item.three_kingdoms_era.copper_spade.name=铜铲
 item.three_kingdoms_era.copper_sword.name=铜剑
 
+item.three_kingdoms_era.bag.name=袋子
+
 
 itemGroup.Sanguo_sundries=三国时代-杂物
 itemGroup.Sanguo_equip=三国时代-装备

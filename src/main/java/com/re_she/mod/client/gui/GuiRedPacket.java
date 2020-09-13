@@ -43,6 +43,7 @@ public class GuiRedPacket extends GuiContainer {
         this.player = player;
         ItemStack itemStack = player.getHeldItem();
         currentItem = player.inventory.currentItem;
+
         if (itemStack.hasTagCompound()&&itemStack.getTagCompound().hasKey("redpacket")) {
             NBTTagCompound redpacket = itemStack.getTagCompound().getCompoundTag("redpacket");
             sender = redpacket.getString("sender");

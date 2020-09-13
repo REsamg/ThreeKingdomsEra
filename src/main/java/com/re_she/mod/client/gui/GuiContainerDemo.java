@@ -36,6 +36,7 @@ public class GuiContainerDemo extends GuiContainer
         super(new ContainerDemo(player));
         this.xSize = 176;
         this.ySize = 133;
+
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.re_she.mod.inventory;
 import com.re_she.mod.item.ItemLoader;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
+import net.minecraft.inventory.InventoryBasic;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
@@ -10,10 +11,14 @@ public class ContainerDemo extends Container {
 
     public ContainerDemo(EntityPlayer player)
     {
-
         for (int i = 0; i < 4; ++i) {
+
+           // this.addSlotToContainer(new Slot(new InventoryBasic("ewqa", false, 1), i, 38 + i * 32, 20));
+
             this.addSlotToContainer(new Slot(player.inventory, i, 38 + i * 32, 20));
         }
+
+
 
         //--------------------------------------------------------------------------------------------------
 

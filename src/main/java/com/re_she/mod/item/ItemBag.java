@@ -31,7 +31,6 @@ public class ItemBag extends Item {
         {
                 playerIn.openGui(Fmltutor.instance, GuiElementLoader.GUI_BAG, worldIn,
                         playerIn.chunkCoordX, playerIn.chunkCoordY, playerIn.chunkCoordZ);
-                playerIn.addChatComponentMessage((IChatComponent)new ChatComponentText("Open Gui"));
         }
         return itemStackIn;
     }

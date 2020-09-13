@@ -59,9 +59,11 @@ public class ItemLoader
 
         //-------------------------------------------------------------------
 
-        GameRegistry.registerItem(bag,"bag");
+
 
         GameRegistry.registerItem(red_packet,"red_packet");
+
+        GameRegistry.registerItem(bag,"bag");
     }
 
 

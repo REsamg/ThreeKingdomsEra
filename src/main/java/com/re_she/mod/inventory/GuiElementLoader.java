@@ -1,6 +1,7 @@
 package com.re_she.mod.inventory;
 
 import com.re_she.mod.Fmltutor;
+import com.re_she.mod.client.gui.GuiBAG;
 import com.re_she.mod.client.gui.GuiContainerDemo;
 import com.re_she.mod.client.gui.GuiRedPacket;
 import cpw.mods.fml.common.network.IGuiHandler;
@@ -30,7 +31,7 @@ public class GuiElementLoader implements IGuiHandler
                 return new ContainerRedPacket(player);
 
             case GUI_BAG:
-                return null;
+                return new ContainerBAG(player);
             default:
                 return null;
         }
@@ -47,7 +48,7 @@ public class GuiElementLoader implements IGuiHandler
                 return new GuiRedPacket(player);
 
             case GUI_BAG:
-                return null;
+                return new GuiBAG(player);
             default:
                 return null;
         }
