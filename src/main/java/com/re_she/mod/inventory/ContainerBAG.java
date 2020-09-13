@@ -66,13 +66,31 @@ public class ContainerBAG extends Container {
 
         if (itemStack.hasTagCompound() && itemStack.getTagCompound().hasKey("itemaaa")) {
 
+
             NBTTagCompound aaitemnbt = itemStack.getTagCompound().getCompoundTag("itemaaa");
-
             itemStack.getTagCompound().setTag("itemaaa",new NBTTagCompound());
-
             ItemStack item = ItemStack.loadItemStackFromNBT(aaitemnbt);
-
             getSlot(0).putStack(item);
+
+            NBTTagCompound aaitemnbt1 = itemStack.getTagCompound().getCompoundTag("itemaaa_1");
+            itemStack.getTagCompound().setTag("itemaaa_1",new NBTTagCompound());
+            ItemStack item1 = ItemStack.loadItemStackFromNBT(aaitemnbt1);
+            getSlot(1).putStack(item1);
+
+            NBTTagCompound aaitemnbt2 = itemStack.getTagCompound().getCompoundTag("itemaaa_2");
+            itemStack.getTagCompound().setTag("itemaaa_2",new NBTTagCompound());
+            ItemStack item2 = ItemStack.loadItemStackFromNBT(aaitemnbt2);
+            getSlot(2).putStack(item2);
+
+            NBTTagCompound aaitemnbt3 = itemStack.getTagCompound().getCompoundTag("itemaaa_3");
+            itemStack.getTagCompound().setTag("itemaaa_3",new NBTTagCompound());
+            ItemStack item3 = ItemStack.loadItemStackFromNBT(aaitemnbt3);
+            getSlot(3).putStack(item3);
+
+            NBTTagCompound aaitemnbt4 = itemStack.getTagCompound().getCompoundTag("itemaaa_4");
+            itemStack.getTagCompound().setTag("itemaaa_4",new NBTTagCompound());
+            ItemStack item4 = ItemStack.loadItemStackFromNBT(aaitemnbt4);
+            getSlot(4).putStack(item4);
         }
     }
 
@@ -86,9 +104,27 @@ public class ContainerBAG extends Container {
         super.onContainerClosed(playerIn);
         if (playerIn.getHeldItem() == null || !playerIn.getHeldItem().getItem().equals(ItemLoader.bag)) return;
 
+        //-------------------------------------------------------------------------------
+
         NBTTagCompound aaitemnbt = new NBTTagCompound();
         if (getSlot(0).getStack() != null) getSlot(0).getStack().writeToNBT(aaitemnbt);
         playerIn.getHeldItem().setTagInfo("itemaaa", aaitemnbt);
+
+        NBTTagCompound aaitemnbt1 = new NBTTagCompound();
+        if (getSlot(1).getStack() != null) getSlot(1).getStack().writeToNBT(aaitemnbt1);
+        playerIn.getHeldItem().setTagInfo("itemaaa_1", aaitemnbt1);
+
+        NBTTagCompound aaitemnbt2 = new NBTTagCompound();
+        if (getSlot(2).getStack() != null) getSlot(2).getStack().writeToNBT(aaitemnbt2);
+        playerIn.getHeldItem().setTagInfo("itemaaa_2", aaitemnbt2);
+
+        NBTTagCompound aaitemnbt3 = new NBTTagCompound();
+        if (getSlot(3).getStack() != null) getSlot(3).getStack().writeToNBT(aaitemnbt3);
+        playerIn.getHeldItem().setTagInfo("itemaaa_3", aaitemnbt3);
+
+        NBTTagCompound aaitemnbt4 = new NBTTagCompound();
+        if (getSlot(4).getStack() != null) getSlot(4).getStack().writeToNBT(aaitemnbt4);
+        playerIn.getHeldItem().setTagInfo("itemaaa_4", aaitemnbt4);
     }
 
 
