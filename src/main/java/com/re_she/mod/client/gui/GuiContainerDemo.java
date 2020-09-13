@@ -23,7 +23,6 @@ public class GuiContainerDemo extends GuiContainer
 {
     private static final String TEXTURE_PATH = Fmltutor.MODID + ":" + "textures/gui/container/gui_demo.png";
 
-
     private static final ResourceLocation TEXTURE = new ResourceLocation(TEXTURE_PATH);
 
     private static final int BUTTON_UP = 0;
