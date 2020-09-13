@@ -61,7 +61,6 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 public class GuiElementLoader implements IGuiHandler
 {
     public static final int GUI_DEMO = 1;
-    public static final int GUI_METAL_FURNACE = 2;
 
     public GuiElementLoader()
     {

@@ -25,6 +25,23 @@ public class Itemcoppercash extends Item {
     @Override
     public ItemStack onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn)
     {
+
+        if (!playerIn.capabilities.isCreativeMode)
+        {
+            --itemStackIn.stackSize;
+        }
+        if (!worldIn.isRemote)
+        {
+            if (playerIn.isSneaking())
+            {
+                int id = GuiElementLoader.GUI_DEMO;
+                playerIn.openGui(Fmltutor.instance, id, worldIn, (int)playerIn.posX, (int)playerIn.posY, (int)playerIn.posZ);
+                playerIn.addChatComponentMessage((IChatComponent)new ChatComponentText("Open Gui"));
+            }
+        }
+        return itemStackIn;
+
+        /*
         if (!playerIn.capabilities.isCreativeMode)
         {
             --itemStackIn.stackSize;
@@ -39,29 +56,9 @@ public class Itemcoppercash extends Item {
             }
         }
         return itemStackIn;
-        /*
-        if(worldIn.isRemote)
-        {
-            //雷电
-            float var4 = 1.0F;
-            int i = (int) (player.prevPosX + (player.posX - player.prevPosX) * var4);
-            int j = (int) (player.prevPosY + (player.posY - player.prevPosY) * var4);//+ 1.62D - this.yOffset) - 1;
-            int k = (int) (player.prevPosZ + (player.posZ - player.prevPosZ) * var4);
 
-            System.out.println("X:" + i + " Y:" + j + " Z:" + k);
-            worldIn.spawnEntityInWorld((Entity) new EntityLightningBolt(worldIn, i, j, k));
-        }
 
          */
+
     }
-
-
-    /*
-    @Override
-    public ItemStack onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn)
-    {
-        return itemStackIn;
-    }
-
-     */
 }
