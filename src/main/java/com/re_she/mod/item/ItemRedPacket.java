@@ -3,21 +3,21 @@ package com.re_she.mod.item;
 import com.re_she.mod.Fmltutor;
 import com.re_she.mod.creativetab.CreativeTabsLoader;
 import com.re_she.mod.inventory.GuiElementLoader;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
 
-public class Itemcoppercash extends Item {
-    public Itemcoppercash() {
+/**
+ * 红包
+ * */
+public class ItemRedPacket extends Item {
+    public ItemRedPacket() {
         super();
-        this.setUnlocalizedName(Fmltutor.MODID + "." + "copper_cash");//设置物品id
-        this.setTextureName(Fmltutor.MODID + ":" + "copper_cash");//设置材质
+        this.setUnlocalizedName(Fmltutor.MODID + "." + "red_packet");
+        this.setTextureName(Fmltutor.MODID + ":" + "red_packet");
         this.setCreativeTab(CreativeTabsLoader.re_tabFMLTutor);
         this.setMaxStackSize(1);
     }
@@ -25,19 +25,10 @@ public class Itemcoppercash extends Item {
     @Override
     public ItemStack onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn)
     {
-        if (!playerIn.capabilities.isCreativeMode)
-        {
-            --itemStackIn.stackSize;
-        }
         if (!worldIn.isRemote)
         {
-            if (playerIn.isSneaking())
-            {
-                playerIn.openGui(Fmltutor.instance, GuiElementLoader.GUI_DEMO, worldIn,
+                playerIn.openGui(Fmltutor.instance, GuiElementLoader.GUI_REDPACKET, worldIn,
                         playerIn.chunkCoordX, playerIn.chunkCoordY, playerIn.chunkCoordZ);
-
-                playerIn.addChatComponentMessage((IChatComponent)new ChatComponentText("Open Gui"));
-            }
         }
         return itemStackIn;
     }

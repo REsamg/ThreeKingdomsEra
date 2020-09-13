@@ -21,6 +21,11 @@ public class ItemLoader
     public static Item safety_buckle = new ItemSafetyBuckle();
 
 
+    public static Item bag = new ItemBag();
+
+    public static Item red_packet = new ItemRedPacket();
+
+
 
     public ItemLoader(FMLPreInitializationEvent event)
     {
@@ -51,6 +56,12 @@ public class ItemLoader
 
 
         GameRegistry.registerItem(safety_buckle,"safety_buckle");
+
+        //-------------------------------------------------------------------
+
+        GameRegistry.registerItem(bag,"bag");
+
+        GameRegistry.registerItem(red_packet,"red_packet");
     }
 
 

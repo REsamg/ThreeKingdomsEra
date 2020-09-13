@@ -2,6 +2,7 @@ package com.re_she.mod.client.gui;
 
 import com.re_she.mod.Fmltutor;
 import com.re_she.mod.inventory.ContainerDemo;
+import com.re_she.mod.inventory.ContainerRedPacket;
 import com.re_she.mod.item.ItemLoader;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -9,13 +10,13 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
-import java.io.IOException;
 
 @SideOnly(Side.CLIENT)
 public class GuiContainerDemo extends GuiContainer
@@ -30,13 +31,11 @@ public class GuiContainerDemo extends GuiContainer
 
     private Slot ironSlot;
 
-    public GuiContainerDemo(ContainerDemo inventorySlotsIn)
+    public GuiContainerDemo(EntityPlayer player)
     {
-        super(inventorySlotsIn);
+        super(new ContainerDemo(player));
         this.xSize = 176;
         this.ySize = 133;
-
-        //this.ironSlot = inventorySlotsIn.getIronSlot();
     }
 
     @Override
