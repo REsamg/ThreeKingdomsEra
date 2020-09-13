@@ -10,6 +10,7 @@ public class ContainerDemo extends Container
 {
 
 
+
     // this.addSlotToContainer(new Slot(player.inventory, 0, 56, 17));
     // this.addSlotToContainer(new Slot(player.inventory, 1, 56, 53));
     //this.addSlotToContainer(new SlotFurnace(invPlayer.player, p_i1812_2_, 2, 116, 35));
