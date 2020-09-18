@@ -13,8 +13,8 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
 
-public class Itemcoppercash extends Item {
-    public Itemcoppercash() {
+public class TKEItemCopperCash extends Item {
+    public TKEItemCopperCash() {
         super();
         this.setUnlocalizedName(Fmltutor.MODID + "." + "copper_cash");//设置物品id
         this.setTextureName(Fmltutor.MODID + ":" + "copper_cash");//设置材质

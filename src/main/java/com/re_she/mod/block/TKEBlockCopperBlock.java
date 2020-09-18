@@ -5,17 +5,17 @@ import com.re_she.mod.creativetab.CreativeTabsLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class BlockAbronzeBlock extends Block
+public class TKEBlockCopperBlock extends Block
 {
-    public BlockAbronzeBlock()
+    public TKEBlockCopperBlock()
     {
         super(Material.ground);
-        this.setUnlocalizedName("bronze_block");
+        this.setUnlocalizedName("copper_block");
         this.setHardness(2.0F);
         this.setStepSound(soundTypeStone);
 
-        this.setUnlocalizedName(Fmltutor.MODID + ".bronze_block");
-        this.setTextureName(Fmltutor.MODID + ":bronze_block");
+        this.setUnlocalizedName(Fmltutor.MODID + ".copper_block");
+        this.setTextureName(Fmltutor.MODID + ":copper_block");
         this.setCreativeTab(CreativeTabsLoader.re_block);
     }
 }

@@ -9,13 +9,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.util.IIcon;
 
-public class BlockAGrassBlock extends Block
+public class TKEBlockGrassBlock extends Block
 {
     @SideOnly(Side.CLIENT)
     private IIcon field_150116_a;
     @SideOnly(Side.CLIENT)
     private IIcon field_150115_b;
-    public BlockAGrassBlock()
+    public TKEBlockGrassBlock()
     {
         super(Material.ground);
 

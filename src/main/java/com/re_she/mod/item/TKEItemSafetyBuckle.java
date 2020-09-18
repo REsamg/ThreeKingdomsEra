@@ -12,9 +12,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
-public class ItemSafetyBuckle extends Item
+public class TKEItemSafetyBuckle extends Item
 {
-    public ItemSafetyBuckle()
+    public TKEItemSafetyBuckle()
     {
         super();
         this.setUnlocalizedName(Fmltutor.MODID + "." + "safety_buckle");

@@ -11,16 +11,16 @@ import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
 
 /**
- * 袋子
+ * 红包
  * */
-public class ItemBag extends Item {
-    public ItemBag()
-    {
+public class TKEItemRedPacket extends Item {
+    public TKEItemRedPacket() {
         super();
-        this.setUnlocalizedName(Fmltutor.MODID + "." + "bag");
-        this.setTextureName(Fmltutor.MODID + ":" + "bag");
+        this.setUnlocalizedName(Fmltutor.MODID + "." + "red_packet");
+        this.setTextureName(Fmltutor.MODID + ":" + "red_packet");
         this.setCreativeTab(CreativeTabsLoader.re_tabFMLTutor);
         this.setMaxStackSize(1);
+
     }
 
 
@@ -29,10 +29,9 @@ public class ItemBag extends Item {
     {
         if (!worldIn.isRemote)
         {
-                playerIn.openGui(Fmltutor.instance, GuiElementLoader.GUI_BAG, worldIn,
+                playerIn.openGui(Fmltutor.instance, GuiElementLoader.GUI_REDPACKET, worldIn,
                         playerIn.chunkCoordX, playerIn.chunkCoordY, playerIn.chunkCoordZ);
         }
         return itemStackIn;
     }
-
 }

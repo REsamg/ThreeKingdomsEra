@@ -20,7 +20,6 @@ public class EventLoader
 
     public static final EventBus EVENT_BUS = new EventBus();
 
-
     @SubscribeEvent
     public void ofsmgh(PlayerInteractEvent event)
     {

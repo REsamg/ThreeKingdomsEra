@@ -1,6 +1,6 @@
 package com.re_she.mod.common;
 
-import com.re_she.mod.block.BlockLoader;
+import com.re_she.mod.block.TKEBlockLoader;
 import com.re_she.mod.entity.EntityLoader;
 import com.re_she.mod.inventory.GuiElementLoader;
 import com.re_she.mod.item.ItemLoader;
@@ -17,7 +17,7 @@ public class CommonProxy
     {
         //new CreativeTabsLoader(event);
         new ItemLoader(event);
-        new BlockLoader(event);
+        new TKEBlockLoader(event);
         new EntityLoader();
         new EventLoader();
         new GuiElementLoader();

@@ -1,16 +1,16 @@
 tile.three_kingdoms_era.grass_block.name=§9黄金方块
-tile.three_kingdoms_era.orecopper.name=铜矿石
-tile.three_kingdoms_era.oretin.name=锡矿石
+tile.three_kingdoms_era.ore_copper.name=铜矿石
+tile.three_kingdoms_era.ore_tin.name=锡矿石
 tile.three_kingdoms_era.bronze_block.name=青铜块
 tile.three_kingdoms_era.copper_block.name=铜块
 
 
 item.three_kingdoms_era.copper_cash.name=铜钱
-item.three_kingdoms_era.copperingot.name=铜锭
-item.three_kingdoms_era.tiningot.name=锡锭
-item.three_kingdoms_era.bronzeingot.name=青铜锭
-item.three_kingdoms_era.ironbroadsword.name=铁质大刀
-item.three_kingdoms_era.ironhalberd.name=铁质战戟
+item.three_kingdoms_era.copper_ingot.name=铜锭
+item.three_kingdoms_era.tin_ingot.name=锡锭
+item.three_kingdoms_era.bronze_ingot.name=青铜锭
+item.three_kingdoms_era.iron_broadsword.name=铁质大刀
+item.three_kingdoms_era.iron_halberd.name=铁质战戟
 item.three_kingdoms_era.copper_picks.name=铜镐
 item.three_kingdoms_era.copper_axe.name=铜斧
 item.three_kingdoms_era.copper_hoe.name=铜锄头
@@ -20,9 +20,9 @@ item.three_kingdoms_era.copper_sword.name=铜剑
 item.three_kingdoms_era.bag.name=袋子
 
 
-itemGroup.Sanguo_sundries=三国时代-杂物
-itemGroup.Sanguo_equip=三国时代-装备
-itemGroup.Sanguo_block=三国时代-方块
+itemGroup.SanGuo_sundries=三国时代-杂物
+itemGroup.SanGuo_equip=三国时代-装备
+itemGroup.SanGuo_block=三国时代-方块
 
 entity.three_kingdoms_era.GoldenChicken.name=黄金鸡
 

@@ -4,16 +4,13 @@ import com.re_she.mod.Fmltutor;
 import com.re_she.mod.creativetab.CreativeTabsLoader;
 import net.minecraft.item.Item;
 
-public class Itembronzeingot extends Item
+public class TKEItemTinIngot extends Item
 {
-    public Itembronzeingot()
+    public TKEItemTinIngot()
     {
         super();
-        this.setUnlocalizedName(Fmltutor.MODID + "." + "bronzeingot");
-        this.setTextureName(Fmltutor.MODID + ":" + "bronzeingot");
+        this.setUnlocalizedName(Fmltutor.MODID + "." + "tin_ingot");
+        this.setTextureName(Fmltutor.MODID + ":" + "tin_ingot");
         this.setCreativeTab(CreativeTabsLoader.re_tabFMLTutor);
     }
-
-
-    
 }

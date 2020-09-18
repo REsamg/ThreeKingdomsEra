@@ -6,24 +6,24 @@ import net.minecraft.item.Item;
 
 public class ItemLoader
 {
-    public static Item copper_cash = new Itemcoppercash();
-    public static Item ironbroadsword = new ItemIronBroadSword();
-    public static Item ironhalberd = new ItemIronHalberd();
-    public static Item copperingot = new Itemcopperingot();
-    public static Item tiningot = new Itemtiningot();
-    public static Item bronzeingot = new Itembronzeingot();
-    public static Item copper_picks = new Itemcopperpicks();
-    public static Item copper_axe = new Itemcopperaxe();
-    public static Item copper_hoe = new Itemcopperhoe();
-    public static Item copper_spade = new Itemcopperspade();
-    public static Item copper_sword = new Itemcoppersword();
+    public static Item copper_cash = new TKEItemCopperCash();
+    public static Item iron_broadsword = new TKEItemIronBroadSword();
+    public static Item iron_halberd = new TKEItemIronHalberd();
+    public static Item copper_ingot = new TKEItemCopperIngot();
+    public static Item tin_ingot = new TKEItemTinIngot();
+    public static Item bronze_ingot = new TKEItemBronzeIngot();
+    public static Item copper_picks = new TKEItemCopperPicks();
+    public static Item copper_axe = new TKEItemCopperAxe();
+    public static Item copper_hoe = new TKEItemCopperHoe();
+    public static Item copper_spade = new TKEItemCopperSpade();
+    public static Item copper_sword = new TKEItemCopperSword();
 
-    public static Item safety_buckle = new ItemSafetyBuckle();
+    public static Item safety_buckle = new TKEItemSafetyBuckle();
 
 
-    public static Item bag = new ItemBag();
+    public static Item bag = new TKEItemBag();
 
-    public static Item red_packet = new ItemRedPacket();
+    public static Item red_packet = new TKEItemRedPacket();
 
 
 
@@ -33,15 +33,15 @@ public class ItemLoader
 
         GameRegistry.registerItem(copper_cash,"copper_cash");
 
-        GameRegistry.registerItem(ironbroadsword, "ironbroadsword");
+        GameRegistry.registerItem(iron_broadsword, "iron_broadsword");
 
-        GameRegistry.registerItem(ironhalberd, "ironhalberd");
+        GameRegistry.registerItem(iron_halberd, "iron_halberd");
 
-        GameRegistry.registerItem(copperingot,"copperingot");
+        GameRegistry.registerItem(copper_ingot,"copper_ingot");
 
-        GameRegistry.registerItem(tiningot,"tiningot");
+        GameRegistry.registerItem(tin_ingot,"tin_ingot");
 
-        GameRegistry.registerItem(bronzeingot,"bronzeingot");
+        GameRegistry.registerItem(bronze_ingot,"bronze_ingot");
 
         GameRegistry.registerItem(copper_picks,"copper_picks");
 

@@ -5,17 +5,16 @@ import com.re_she.mod.creativetab.CreativeTabsLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class BlockAcopper extends Block {
-    public BlockAcopper()
+public class TKEBlockOreTin extends Block {
+    public TKEBlockOreTin()
     {
         super(Material.ground);
-        this.setUnlocalizedName("orecopper");
-        this.setHardness(2.0F);
+        this.setUnlocalizedName("ore_tin");
+        this.setHardness(2.5F);
         this.setStepSound(soundTypeStone);
 
-        this.setUnlocalizedName(Fmltutor.MODID + ".orecopper");
-        this.setTextureName(Fmltutor.MODID + ":orecopper");
+        this.setUnlocalizedName(Fmltutor.MODID + ".ore_tin");
+        this.setTextureName(Fmltutor.MODID + ":ore_tin");
         this.setCreativeTab(CreativeTabsLoader.re_block);
     }
-
 }
