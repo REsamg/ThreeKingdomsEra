@@ -28,5 +28,4 @@ public class WorldTeleporterPollute extends Teleporter {
     @Override
     public void removeStalePortalLocations(long p_85189_1_) {
     }
-
 }
