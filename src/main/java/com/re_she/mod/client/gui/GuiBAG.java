@@ -22,7 +22,6 @@ import org.lwjgl.opengl.GL11;
 
 public class GuiBAG extends GuiContainer {
 
-
     private static final String TEXTURE_PATH = Fmltutor.MODID + ":" + "textures/gui/container/gui_bag.png";
     private static final ResourceLocation TEXTURE = new ResourceLocation(TEXTURE_PATH);
 

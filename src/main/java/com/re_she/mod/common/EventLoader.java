@@ -1,9 +1,15 @@
 package com.re_she.mod.common;
 
+import com.re_she.mod.world.WorldTeleporterPollute;
 import cpw.mods.fml.common.eventhandler.EventBus;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.management.ServerConfigurationManager;
 import net.minecraft.world.Teleporter;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingEvent;
@@ -148,7 +154,7 @@ public class EventLoader
     @SubscribeEvent
     public void onPlayerInteract(PlayerInteractEvent event)
     {
-        /*
+
         EntityPlayer entity = event.entityPlayer;
         World world = entity.worldObj;
         if (!event.world.isRemote) {
@@ -162,7 +168,7 @@ public class EventLoader
                 scm.transferEntityToWorld(entity, 21,(WorldServer) world,MinecraftServer.getServer().worldServerForDimension(21),teleporter);
             }
             String info = String.format("%s interacts with: %s", event.entityPlayer.getDisplayName(), (event.entityPlayer));
-        }*/
+        }
     }
 
 

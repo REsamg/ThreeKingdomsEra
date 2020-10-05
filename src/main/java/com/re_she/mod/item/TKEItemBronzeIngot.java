@@ -13,7 +13,4 @@ public class TKEItemBronzeIngot extends Item
         this.setTextureName(Fmltutor.MODID + ":" + "bronze_ingot");
         this.setCreativeTab(CreativeTabsLoader.re_tabFMLTutor);
     }
-
-
-    
 }

@@ -1,7 +1,7 @@
 package com.re_she.mod.common;
 
 public class camp {
-    int CampShu;
-    int CampWei;
-    int CampWu;
+    int CampShu = 0;
+    int CampWei = 0;
+    int CampWu = 0;
 }
