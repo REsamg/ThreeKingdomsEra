@@ -18,8 +18,10 @@ public class Fmltutor
     @Mod.Instance(Fmltutor.MODID)
     public static Fmltutor instance;
 
+
     @SidedProxy(clientSide = "com.re_she.tke.client.ClientProxy",
             serverSide = "com.re_she.tke.common.CommonProxy")
+
 
     public static CommonProxy proxy;
 
